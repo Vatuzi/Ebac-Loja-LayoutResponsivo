@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(213, 206, 221);
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: blueviolet;
+    padding: 10px 0;
+    color: #fff;
+    margin-bottom: 56px;
+    font-style: italic;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+
+}
+
+header li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: 30% 63%;
+    column-gap: 5%;
+    margin-bottom: 56px;
+}
+
+section h2 {
+    color: blueviolet;
+    font-style: italic;
+}
+
+hr{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-color: blueviolet;
+}
+.sobre p {
+    font-size: 1em;
+    text-align: justify;
+}
+
+.sobre img {
+    max-width: 100%;
+}
+
+.produto {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    column-gap: 4%;
+    row-gap: 5%;
+}
+
+.produto img {
+    max-width: 96%;
+
+}
+
+.produto h3 {
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    margin-bottom: 8px;
+}
+
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: blueviolet;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    
+    .container{
+        max-width: 90%;
+    }
+    .sobre {
+        display:block;
+        max-width: 100%;
+        font-size: 1em;
+    }
+    .sobre img {
+        margin-bottom: 16px;
+        max-width: 100%;
+    }
+
+    .produto {
+        display: grid;
+        grid-template-columns: repeat(2, 47.5%);
+        column-gap: 4%;
+        row-gap: 5%;
+    }
+    .produto img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .container{
+        max-width: 80%;
+    }
+    header ul {
+        display: block;
+    }
+    .sobre {
+        display:block;
+        max-width: 100%;
+        font-size: 1em;
+    }
+    .sobre img {
+        margin-bottom: 16px;
+        max-width: 100%;
+    }
+    .produto{
+        display: block;
+    }
+
+    button{
+        margin-top: 10px;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        max-width: 90%;
+    }
+}
