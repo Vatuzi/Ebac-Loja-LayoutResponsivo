@@ -70,6 +70,7 @@ hr{
     grid-template-columns: repeat(4, 22%);
     column-gap: 4%;
     row-gap: 5%;
+    width: 100%;
 }
 
 .produto img {
@@ -114,6 +115,7 @@ button {
     .sobre img {
         margin-bottom: 16px;
         max-width: 100%;
+        width: 100%;
     }
 
     .produto {
@@ -121,9 +123,11 @@ button {
         grid-template-columns: repeat(2, 47.5%);
         column-gap: 4%;
         row-gap: 5%;
+        width: 100%;
     }
     .produto img {
         max-width: 100%;
+        width: 100%;
     }
 }
 
@@ -143,9 +147,11 @@ button {
     .sobre img {
         margin-bottom: 16px;
         max-width: 100%;
+        width: 100%;
     }
     .produto{
         display: block;
+        width: 100%;
     }
 
     button{
@@ -157,5 +163,8 @@ button {
 @media screen and (max-width: 1024px) {
     .container{
         max-width: 90%;
+    }
+    .produto{
+        width: 100%;
     }
 }
